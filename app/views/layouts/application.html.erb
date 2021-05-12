@@ -12,6 +12,10 @@
   </head>
 
   <body>
+    <div class="nav-bar d-flex justify-content-between align-items-center">
+      <h1>Yelp MVP</h1>
+      <%= link_to "Add a new restaurant", new_restaurant_path %>
+    </div>
     <%= yield %>
   </body>
 </html>

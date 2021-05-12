@@ -13,7 +13,7 @@ Restaurant.delete_all
 puts 'Adding new restaurants...'
 50.times do
   restaurant = Restaurant.create(
-    name: Faker::Creature::Bird.plausible_common_name,
+    name: "The #{Faker::Creature::Bird.plausible_common_name}",
     address: Faker::Address.full_address,
     phone_number: Faker::PhoneNumber.cell_phone,
     category: Restaurant::CATEGORY.sample
